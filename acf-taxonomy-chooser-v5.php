@@ -17,12 +17,6 @@ class acf_field_taxonomy_chooser extends acf_field {
 	*/
 	
 	function __construct() {
-
-		// $test = get_field( 'test_term_select', $_GET['post'] );
-
-		// echo 'shit<pre>';
-		// print_r( $test );
-		// echo '</pre>';
 		
 		/*
 		*  name (string) Single word, no spaces. Underscores allowed
@@ -221,7 +215,7 @@ class acf_field_taxonomy_chooser extends acf_field {
         // add empty value (allows '' to be selected)
         if( empty($field['value']) ){
 
-            $field['choices'] = '';
+            $field['value'] = '';
             // $field['value']['cat']	 = 	'';
         }
 
