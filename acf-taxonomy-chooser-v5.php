@@ -221,8 +221,8 @@ class acf_field_taxonomy_chooser extends acf_field {
         // add empty value (allows '' to be selected)
         if( empty($field['value']) ){
 
-            $field['value'] = '';
-            $field['value']['cat']	 = 	'';
+            $field['choices'] = '';
+            // $field['value']['cat']	 = 	'';
         }
 
 
